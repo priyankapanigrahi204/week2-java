@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+">
+
+	<bean id="id1" class="NewClass">
+		<property name="data">
+			<map>
+				<entry key="22335648" value-ref="citizen1" />
+				<entry key="99886677" value-ref="citizen2" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="citizen1" class="Citizen">
+		<property name="name">
+			<value>Ajay</value>
+		</property>
+		<property name="contactNumber">
+			<value>8888888888</value>
+		</property>
+		<property name="emailAddress">
+			<value>Ajay88@gmail.com</value>
+		</property>
+	</bean>
+	
+	<bean id="citizen2" class="Citizen">
+		<property name="name">
+			<value>Ashok</value>
+		</property>
+		<property name="contactNumber">
+			<value>7777777777</value>
+		</property>
+		<property name="emailAddress">
+			<value>Ashok77@gmail.com</value>
+		</property>
+	</bean>
+</beans>
